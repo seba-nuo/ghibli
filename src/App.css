@@ -1,12 +1,16 @@
 nav {
-    background-color: #4f669c;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #4f669c;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filmsContainer {
-    padding-top: 30px;
-    background-color: #FFD180;
+  background-color: #ffd180;
+  padding-top: 30px;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 2fr));
+  padding: 20px;
 }

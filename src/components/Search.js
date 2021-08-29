@@ -1,3 +1,5 @@
+import styles from './Search.module.css'
+
 function Search({ films, updateSearch, updateFinded }) {
   const handleSubmit = (e) => {
     const search = e.target[0].value;
@@ -16,15 +18,15 @@ function Search({ films, updateSearch, updateFinded }) {
   const allTitles = films.map((film) => film.title);
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} onReset={() => updateSearch([])}>
-      <input list="titles" placeholder="find some Ghibli film" id="search" />
+    <form onSubmit={(e) => handleSubmit(e)} onReset={() => updateSearch([])} className={styles.form}>
+      <input className={styles.input} list="titles" placeholder="find some Ghibli film" id="search" />
       <datalist id="titles">
         {allTitles?.map((title) => (
           <option value={title} key={title} />
         ))}
       </datalist>
-      <button type="reset">Clear</button>
-      <button type="submit">Search</button>
+      <button type="reset" className={styles.clear}>CLEAR</button>
+      <button type="submit" className={styles.search}>SEARCH</button>
     </form>
   );
 }
