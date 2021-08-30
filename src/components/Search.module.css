@@ -6,8 +6,6 @@
 .input {
     height: 1.5rem;
     flex-grow: 1;
-    width: auto;
-    max-width: 20rem;
     border-radius: 40px;
     margin: 0 5px;
     background-color: rgb(226, 226, 226);
@@ -15,7 +13,7 @@
     padding-left: 10px;
 }
 
-.input:hover {
+.input:hover, .input:focus {
     background-color: white;
 }
 
