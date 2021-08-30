@@ -19,7 +19,8 @@ function Search({ films, updateSearch, updateFinded }) {
 
   return (
     <form onSubmit={(e) => handleSubmit(e)} onReset={() => updateSearch([])} className={styles.form}>
-      <input className={styles.input} list="titles" placeholder="find some Ghibli film" id="search" />
+      
+      <input className={styles.input} list="titles" placeholder="🔍find some Ghibli film" id="search" />
       <datalist id="titles">
         {allTitles?.map((title) => (
           <option value={title} key={title} />

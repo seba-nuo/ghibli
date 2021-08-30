@@ -11,6 +11,6 @@ nav {
   padding-top: 30px;
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
   padding: 20px;
 }
