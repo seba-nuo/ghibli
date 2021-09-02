@@ -1,4 +1,6 @@
 # Studio Ghibli Movies 🔍
+| Answer to the [frontend test](https://github.com/resuelve/prueba_frontend) of Resuelve<br />
+
 Find information about a Ghibli film using his [API](https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API), check the [website](https://ghibli.dexco.cl/)
 
 ## Tecnologies
